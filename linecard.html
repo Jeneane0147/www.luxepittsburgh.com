@@ -11,6 +11,73 @@ appliances:
     url: http://www.thermador.com/
   - name: WOLF/SUBZERO
     url: http://www.subzero-wolf.com/wolF
+
+bathroomaccessories:
+  - name: AMBA
+    url: http://www.ambaproducts.com/
+  - name: DORNBRACHT
+    url: https://www.dornbracht.com/
+  - name: GINGER
+    url: https://www.gingerco.com/
+  - name: INFINITY DRAIN
+    url: http://infinitydrain.com/
+  - name: MR. STEAM
+    url: http://www.mrsteam.com/
+  - name: MOUNTAIN PLUMBING
+    url: http://mountainplumbing.com/
+  - name: NEWPORT BRASS
+    url: https://www.newportbrass.com/
+  - name: PANASONIC
+    url: http://business.panasonic.com/
+
+closets:
+  - name: SCHMALENBACH
+    url: http://eggersmannusa.com/
+  - name: WELLBORN
+    url: https://www.wellborn.com/
+
+countertops:
+  - name: CAMBRIA
+    url: https://www.cambriausa.com/
+  - name: CEASARSTONE
+    url: http://www.caesarstoneus.com/
+  - name: DEKTON
+    url: http://www.dekton.com/usa
+  - name: DENTE CLASSIC STONE
+    url: http://www.denteclassicstone.net/
+  - name: ETERNIA
+    url: http://www.eterniaquartz.com/
+  - name: GROTHOUSE LUMBER COMPANY
+    url: http://glumber.com/
+  - name: SILESTONE
+    url: http://www.silestoneusa.com/
+
+hardware:
+  - name: ALNO
+    url: http://alnoinc.com/
+  - name: ATLAS HOMEWARES
+    url: http://luxepittsburgh.com/luxe-line-card/ATLASTOTHETRADE.COM
+  - name: COLONIAL BRONZE
+    url: http://www.colonialbronze.com/
+  - name: DEKOR
+    url: http://www.dekkorinc.com/
+  - name: HAFELE
+    url: https://www.hafele.com/us/en/
+  - name: INOX
+    url: http://www.handlesets.com/
+  - name: RICHELIEU
+    url: http://www.richelieu.com/US/EN
+  - name: SCHAUB
+    url: http://schaubandcompany.com/
+  - name: SOKO
+    url: http://www.sokostudio.com/
+  - name: TOPKNOBS
+    url: http://www.topknobs%20decor.com/
+  - name: UNISON HARDWARE
+    url: http://www.unisonhardware.com/
+
+
+
 ---
    <section class="grid">
      <div class="col-12">
@@ -18,51 +85,258 @@ appliances:
      </div>
    </section>
 
-<!-- ADD LINKS HERE-->
+
   <section class="grid">
    <div class="col-12">
      <h3> APPLIANCES </h3>
   </div>
-
   {% for item in page.appliances %}
-
     <div class="col-2">
       <a href="{{ item.url }}" target="_blank">
         <h4>{{ item.name }}</h4>
       </a>
     </div>
-
   {% endfor %}
+  </section>
 
- </section>
 
- <section class="grid">
-  <div class="col-12">
-    <h3> BATHROOM ACCESSORIES </h3>
- </div>
+  <section class="grid">
+   <div class="col-12">
+     <h3> BATHROOM ACCESSORIES </h3>
+  </div>
+  {% for item in page.bathroomaccessories %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
 
-  <div class="col-2">
-    <h4> AMBA </h4>
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> CLOSETS </h3>
   </div>
-  <div class="col-2">
-    <h4> DORNBRACHT </h4>
+  {% for item in page.closets %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> COUNTERTOPS </h3>
   </div>
-  <div class="col-2">
-    <h4> GINGER </h4>
+  {% for item in page.countertops %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> HARDWARE </h3>
   </div>
-  <div class="col-2">
-    <h4> INFINITY DRAIN </h4>
+  {% for item in page.hardware %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> HEATED FLOORS </h3>
   </div>
-  <div class="col-2">
-    <h4> MR. STEAM </h4>
+  {% for item in page.heated floors %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> KITCHEN ACCESSORIES </h3>
   </div>
-  <div class="col-2">
-    <h4> MOUNTAIN PLUMBING </h4>
+  {% for item in page.kitchenaccessories %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> KITCHEN CABINETS </h3>
   </div>
-  <div class="col-2">
-    <h4> NEWPORT BRASS </h4>
+  {% for item in page.kitchencabinets %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> KITCHEN SINKS </h3>
   </div>
-  <div class="col-2">
-    <h4> PANASONIC </h4>
+  {% for item in page.kitchensinks %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> LIGHTING </h3>
   </div>
-</section>
+  {% for item in page.lighting %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> MIRRORS & MEDICINE CABINETS </h3>
+  </div>
+  {% for item in page.mirrorsandmedicinecabinets %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> PLUMBING FIXTURES </h3>
+  </div>
+  {% for item in page.plumbingfixtures %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> SHOWER DOORS & BASES </h3>
+  </div>
+  {% for item in page.showerdoorsandbases %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> TILE </h3>
+  </div>
+  {% for item in page.tile %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> TIOLETS </h3>
+  </div>
+  {% for item in page.tiolets %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> TUBS </h3>
+  </div>
+  {% for item in page.tubs %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+  <section class="grid">
+   <div class="col-12">
+     <h3> VANITIES & SINKS </h3>
+  </div>
+  {% for item in page.vanitiesandsinks %}
+    <div class="col-2">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
+    </div>
+  {% endfor %}
+  </section>
+
+
+
+
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
+  - name:
+    url:
