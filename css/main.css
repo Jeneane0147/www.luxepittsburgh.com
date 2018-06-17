@@ -173,6 +173,10 @@ nav a {
   padding: 2% 10%;
 }
 
+.padded-3 {
+  padding: 0% 3%;
+}
+
 .text-white {
   color: white;
 }
@@ -210,11 +214,19 @@ nav a {
   font-weight: 700;
 }
 
+.letterspacing {
+  letter-spacing: .5px;
+}
 
 .icon {
   max-width: 75px;
   margin:auto;
   display:block;
+}
+
+.line-height {
+line-height: 1.8em;
+font-size: 1.1rem;
 }
 
 footer {
