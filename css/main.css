@@ -31,6 +31,37 @@ header img {
   min-height: 50vh;
 }
 
+/* HERO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  min-height: 75vh;
+}
+
+.hero .flexslider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.hero .flexslider .slides,
+.hero .flexslider .slides li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .flexslider img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: center;
+}
+
 /* PRODUCT CATEGORIES */
 .product-categories {
   border-left: solid 120px white;

@@ -1,1 +1,5 @@
-console.log('hello');
+$(window).on('load', function(){
+
+  $('.flexslider').flexslider();
+
+});
