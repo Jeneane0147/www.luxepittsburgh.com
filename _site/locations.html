@@ -26,39 +26,39 @@
      <div class="col-2"> <a href="/locations"> LOCATIONS </a> </div>
    </header>
 
-  {{ content }}
+  <section class="grid-middle">
+  <div class="col-6">
+    <img src="img/location.svg"/>
+    <h3> EAST LIBERTY </h3>
+    <p> 5991 Broad St. <br> Pittsburgh, PA 15206 </p>
+    <p> Tues-Fri 9am-5pm <br> Sat 9am-3pm </p>
+    <p> 412.661.1416 </p>
+  </div>
+  <div class="col-6">
+    <img src="img/downtownshowroom.jpg"/>
+  </div>
+  <div class="col-6">
+    <img src="img/downtownshowroom.jpg"/>
+  </div>
+  <div class="col-6">
+    <img src="img/location.svg"/>
+    <h3> DOWNTOWN </h3>
+    <p> 200 5th Ave. <br> Pittsburgh, PA 15222 </p>
+    <p> Open by Appointment Only </p>
+    <p> 412.281.3712 </p>
+  </div>
+</section>
+
 
    <!-- FOOTER-->
    <!-- Add in images!!! -->
    <footer>
 
-     {% if page.url != "/locations.html" %}
-
-      <p> Visit us at one of our showrooms </p>
-
-    {% endif %}
+     
 
      <div class="grid-center">
 
-       {% if page.url != "/locations.html" %}
-
-         <div class="col-6">
-           <img src="img/location.svg"/>
-           <p> East Liberty </p>
-           <p> 5991 Broad St. <br> Pittsburgh, PA 15206 </p>
-           <p> Tues-Fri 9am-5pm <br> Sat 9am-3pm </p>
-           <p> 412.661.1416 </p>
-         </div>
-
-         <div class="col-6">
-           <img src="img/location.svg"/>
-           <p>Downtown</p>
-           <p> 200 5th Ave. <br> Pittsburgh, PA 15222 </p>
-           <p> Open by Appointment Only </p>
-           <p> 412.281.3712 </p>
-         </div>
-
-      {% endif %}
+       
 
        <div class="col-6">
          <form method="POST" action="https://formspree.io/brent@luxepittsburgh.com">
