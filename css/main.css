@@ -8,14 +8,27 @@ body {
   font-weight: 400;
 }
 
+a {
+  color: inherit;
+}
+
 /* HEADER */
 header a {
-  padding: 0 2rem;
+  padding: 0 1.5rem;
   display: inline-block;
+  letter-spacing: 2px;
+  text-decoration: none;
 }
 
 header img {
   display: inline-block;
+}
+
+/* QUICK ABOUT */
+.quick-about {
+  font-size: 1.3rem;
+  line-height: 1.8em;
+  min-height: 50vh;
 }
 
 /* PRODUCT CATEGORIES */
@@ -90,6 +103,10 @@ header img {
 
 .text-black {
   color: black;
+}
+
+.text-lightgrey {
+  color: #a8a8a8;
 }
 
 .textcenter {
