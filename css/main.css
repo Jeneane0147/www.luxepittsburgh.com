@@ -1,11 +1,11 @@
 *{
   box-sizing: border-box;
-  border: solid 1px black;
+  /* border: solid 1px black; */
 }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
+  font-weight: 100;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 
 /* HEADER */
 header a {
-  padding: 0 1.5rem;
+  padding: 1rem 1.5rem;
   display: inline-block;
   letter-spacing: 2px;
   text-decoration: none;
@@ -24,11 +24,23 @@ header img {
   display: inline-block;
 }
 
+nav a {
+  text-decoration: none;
+}
+
 /* QUICK ABOUT */
 .quick-about {
   font-size: 1.3rem;
   line-height: 1.8em;
   min-height: 50vh;
+  font-weight: 100;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.quick-about span {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* HERO */
@@ -37,6 +49,22 @@ header img {
   position: relative;
   overflow: hidden;
   min-height: 75vh;
+  color: white;
+  font-size: 20px;
+}
+
+.hero .hero-content {
+  z-index: 2;
+  position: relative;
+}
+
+.hero .hero-content h1 {
+  font-weight: 100;
+}
+
+.hero .hero-content h2 {
+  font-weight: 100;
+  font-size: 1.5rem;
 }
 
 .hero .flexslider {
@@ -63,13 +91,12 @@ header img {
 }
 
 /* PRODUCT CATEGORIES */
-.product-categories {
-  border-left: solid 120px white;
-  border-right: solid 120px white;
-}
+
 
 .product-categories-border {
-  border: solid 30px white;
+  border-left: solid 30px white;
+  border-right: solid 30px white;
+  border-bottom: solid 60px white;
 }
 
 .product-categories-wrapper {
@@ -121,11 +148,29 @@ header img {
   background-image: url('../img/product-categories-outdoor.jpg');
 }
 
+.socialimages {
+  max-width: 35px;
+}
+
+.clientstoies {
+  font-size: 1.3rem;
+  line-height: 1.8em;
+  min-height: 50vh;
+  font-weight: 100;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding: 2% 10%;
+}
+
 /* HELPERS */
 .container {
   margin-left: auto !important;
   margin-right: auto !important;
   max-width: 1024px;
+}
+
+.padded {
+  padding: 2% 10%;
 }
 
 .text-white {
@@ -164,3 +209,34 @@ header img {
 .open-sans-bold {
   font-weight: 700;
 }
+
+
+.icon {
+  max-width: 75px;
+  margin:auto;
+  display:block;
+}
+
+footer {
+  padding: 5%;
+  }
+
+footer form * {
+  width: 100%;
+  margin: 10px 0px;
+  padding: 12px 8px;
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+  color: grey;
+  font-size: 1rem;
+  }
+
+footer button {
+  background-color: #a8a8a8;
+  color: white;
+  font-weight: bold;
+  }
+
+footer textarea {
+  min-height: 160px;
+  }
