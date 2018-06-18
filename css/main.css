@@ -23,7 +23,9 @@ section {
 
 /* HEADER */
 header a {
-  padding: 1rem 1.5rem;
+  padding: 1rem 0;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
   display: inline-block;
   letter-spacing: 2px;
   text-decoration: none;
@@ -45,6 +47,120 @@ nav a {
 header .cc-active {
   color: black;
 }
+
+body.projects-html .nav-projects,
+body.clientstories-html .nav-clientstories,
+body.services-html .nav-services,
+body.about-html .nav-about,
+body.linecard-html .nav-linecard,
+body.locations-html .nav-locations {
+  color: black;
+  border-bottom: 1px solid;
+}
+
+@media (max-width: 768px) {
+
+  body.projects-html .nav-projects,
+  body.clientstories-html .nav-clientstories,
+  body.services-html .nav-services,
+  body.about-html .nav-about,
+  body.linecard-html .nav-linecard,
+  body.locations-html .nav-locations {
+    color: white;
+    font-weight: bold;
+    border: none;
+  }
+
+}
+
+.mobile-navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 0 10%;
+}
+
+.mobile-navigation-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-grow: 0;
+  position: relative;
+}
+
+.mobile-navigation-items {
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  width: 200px;
+  margin-left: 20%;
+  height: auto;
+  padding: 1rem;
+  background: rgba(0, 0, 0, .5);
+  transition: all 500ms cubic-bezier(0.000, 1.085, 0.255, 1.010);
+  transform-origin: right top;
+  border-radius: 4px;
+}
+
+body.menu-hidden .mobile-navigation-items {
+  transform: scale(0);
+}
+
+body.menu-visible .mobile-navigation-items {
+  transform: scale(1);
+}
+
+.mobile-navigation-items a {
+  display: block;
+  width: 100%;
+  color: white;
+  padding: .75rem 0;
+  text-decoration: none;
+}
+
+.mobile-navigation-icon-wrap {
+  position: relative;
+  margin-top: 1rem;
+}
+
+.mobile-navigation-icon-wrap img {
+  transition: all 500ms cubic-bezier(0.000, 1.085, 0.255, 1.010);
+}
+
+.mobile-navigation-hamburger {
+  width: 30px;
+  height: 30px;
+}
+
+body.menu-hidden .mobile-navigation-hamburger{
+  transform: scale(1);
+}
+
+body.menu-visible .mobile-navigation-hamburger{
+  transform: scale(0);
+}
+
+.mobile-navigation-close {
+  top: 0;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+}
+
+body.menu-hidden .mobile-navigation-close{
+  transform: scale(0);
+}
+
+body.menu-visible .mobile-navigation-close{
+  transform: scale(1);
+}
+
+.mobile-navigation-logo {
+  width: 100px;
+  height: auto;
+}
+
 /* this on on the line-card page */
 .inline-nav a{
   display: inline-block;
