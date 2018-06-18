@@ -273,190 +273,243 @@ vanitiesandsinks:
    <section class="grid">
      <div class="col-12">
        <h2> LINE CARD</h2>
-       <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-       <nav class="inline-nav">
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
      </div>
    </section>
 
 
   <section class="grid">
-
-    <div class="col-4">
-     <h3 class="open-sans-light" id="appliances"> APPLIANCES </h3>
-
-      {% for item in page.appliances %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+   <div class="col-12 linecardlinkheadings">
+     <h3 class="open-sans-light"> APPLIANCES </h3>
+  </div>
+  {% for item in page.appliances %}
+    <div class="col-2 textcenter text-lightgrey linecardlinks">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> BATHROOM ACCESSORIES </h3>
 
-      {% for item in page.bathroomaccessories %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12 linecardlinkheadings">
+     <h3> BATHROOM ACCESSORIES </h3>
+  </div>
+  {% for item in page.bathroomaccessories %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> CLOSETS </h3>
 
-      {% for item in page.closets %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> CLOSETS </h3>
+  </div>
+  {% for item in page.closets %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> COUNTERTOPS </h3>
 
-      {% for item in page.countertops %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> COUNTERTOPS </h3>
+  </div>
+  {% for item in page.countertops %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> HARDWARE </h3>
 
-      {% for item in page.hardware %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> HARDWARE </h3>
+  </div>
+  {% for item in page.hardware %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> HEATED FLOORS </h3>
 
-      {% for item in page.heatedfloors %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> HEATED FLOORS </h3>
+  </div>
+  {% for item in page.heatedfloors %}
+    <div class="col-3 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> KITCHEN ACCESSORIES </h3>
 
-      {% for item in page.kitchenaccessories %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> KITCHEN ACCESSORIES </h3>
+  </div>
+  {% for item in page.kitchenaccessories %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> KITCHENCABINETS </h3>
 
-      {% for item in page.kitchencabinets %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> KITCHEN CABINETS </h3>
+  </div>
+  {% for item in page.kitchencabinets %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> KITCHEN SINKS </h3>
 
-      {% for item in page.kitchensinks %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> KITCHEN SINKS </h3>
+  </div>
+  {% for item in page.kitchensinks %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> LIGHTING </h3>
 
-      {% for item in page.lighting %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> LIGHTING </h3>
+  </div>
+  {% for item in page.lighting %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> MIRRORS AND MEDICINE CABINETS </h3>
 
-      {% for item in page.mirrorsandmedicinecabinets %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> MIRRORS & MEDICINE CABINETS </h3>
+  </div>
+  {% for item in page.mirrorsandmedicinecabinets %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> PLUMBING FIXTURES </h3>
 
-      {% for item in page.plumbingfixtures %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> PLUMBING FIXTURES </h3>
+  </div>
+  {% for item in page.plumbingfixtures %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> SHOWER DOORS & BASES </h3>
 
-      {% for item in page.showerdoorsandbases %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> SHOWER DOORS & BASES </h3>
+  </div>
+  {% for item in page.showerdoorsandbases %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> TILE </h3>
 
-      {% for item in page.tile %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> TILE </h3>
+  </div>
+  {% for item in page.tile %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> TOILETS </h3>
 
-      {% for item in page.toilets %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> TOILETS </h3>
+  </div>
+  {% for item in page.toilets %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> TUBS </h3>
 
-      {% for item in page.tubs %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> TUBS </h3>
+  </div>
+  {% for item in page.tubs %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
+  {% endfor %}
+  </section>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> VANITIES & SINKS </h3>
 
-      {% for item in page.vanitiesandsinks %}
-          <a href="{{ item.url }}" target="_blank" class="tag">
-            <h4>{{ item.name }}</h4>
-          </a>
-      {% endfor %}
+  <section class="grid">
+   <div class="col-12">
+     <h3> VANITIES & SINKS </h3>
+  </div>
+  {% for item in page.vanitiesandsinks %}
+    <div class="col-2 textcenter text-lightgrey">
+      <a href="{{ item.url }}" target="_blank">
+        <h4>{{ item.name }}</h4>
+      </a>
     </div>
-
+  {% endfor %}
   </section>
