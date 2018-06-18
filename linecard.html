@@ -275,14 +275,23 @@ vanitiesandsinks:
        <h2> LINE CARD</h2>
        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
        <nav class="inline-nav">
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
-         <a href="#appliances"> Appliances </a>
+         <a href="#appliances"> APPLIANCES </a>
+         <a href="#bathroomaccessories"> BATHROOM ACCESSORIES </a>
+         <a href="#closets"> CLOSETS </a>
+         <a href="#countertops"> COUNTERTOPS </a>
+         <a href="#hardware"> HARDWARE </a>
+         <a href="#heatedfloors"> HEATED FLOORS </a>
+         <a href="#kitchenaccessories"> KITCHEN ACCESSORIES </a>
+         <a href="#kitchencabinets"> KITCHEN CABINETS </a>
+         <a href="#kitchensinks"> KITCHEN SINKS </a>
+         <a href="#lighting"> LIGHTING </a>
+         <a href="#mirrorsandmedicinecabinets"> MIRRORS & MEDICINE CABINETS </a>
+         <a href="#plumbingfixtures"> PLUMBING FIXTURES </a>
+         <a href="#showerdoorsandbases"> SHOWER DOORS & BASES </a>
+         <a href="#tiles"> TILES </a>
+         <a href="#toilets"> TOILETS </a>
+         <a href="#tubs"> TUBS </a>
+         <a href="#vanitiesandsinks"> VANITIES & SINKS </a>
      </div>
    </section>
 
@@ -300,7 +309,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> BATHROOM ACCESSORIES </h3>
+     <h3 class="open-sans-light" id="bathroomaccessories"> BATHROOM ACCESSORIES </h3>
 
       {% for item in page.bathroomaccessories %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -310,7 +319,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> CLOSETS </h3>
+     <h3 class="open-sans-light" id="closets"> CLOSETS </h3>
 
       {% for item in page.closets %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -320,7 +329,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> COUNTERTOPS </h3>
+     <h3 class="open-sans-light" id="countertops"> COUNTERTOPS </h3>
 
       {% for item in page.countertops %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -330,7 +339,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> HARDWARE </h3>
+     <h3 class="open-sans-light" id="hardware"> HARDWARE </h3>
 
       {% for item in page.hardware %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -340,7 +349,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> HEATED FLOORS </h3>
+     <h3 class="open-sans-light" id="heatedfloors"> HEATED FLOORS </h3>
 
       {% for item in page.heatedfloors %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -350,7 +359,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> KITCHEN ACCESSORIES </h3>
+     <h3 class="open-sans-light" id="kitchenaccessories"> KITCHEN ACCESSORIES </h3>
 
       {% for item in page.kitchenaccessories %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -360,7 +369,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> KITCHENCABINETS </h3>
+     <h3 class="open-sans-light" id="kitchencabinets"> KITCHEN CABINETS </h3>
 
       {% for item in page.kitchencabinets %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -370,7 +379,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> KITCHEN SINKS </h3>
+     <h3 class="open-sans-light" id="kitchensinks"> KITCHEN SINKS </h3>
 
       {% for item in page.kitchensinks %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -380,7 +389,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> LIGHTING </h3>
+     <h3 class="open-sans-light" id="lighting"> LIGHTING </h3>
 
       {% for item in page.lighting %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -390,7 +399,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> MIRRORS AND MEDICINE CABINETS </h3>
+     <h3 class="open-sans-light" id="mirrorsandmedicinecabinets"> MIRRORS & MEDICINE CABINETS </h3>
 
       {% for item in page.mirrorsandmedicinecabinets %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -400,7 +409,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> PLUMBING FIXTURES </h3>
+     <h3 class="open-sans-light" id="plumbingfixtures"> PLUMBING FIXTURES </h3>
 
       {% for item in page.plumbingfixtures %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -410,7 +419,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> SHOWER DOORS & BASES </h3>
+     <h3 class="open-sans-light" id="showerdoorsandbases"> SHOWER DOORS & BASES </h3>
 
       {% for item in page.showerdoorsandbases %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -420,7 +429,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> TILE </h3>
+     <h3 class="open-sans-light" id="tile"> TILE </h3>
 
       {% for item in page.tile %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -429,8 +438,7 @@ vanitiesandsinks:
       {% endfor %}
     </div>
 
-    <div class="col-4">
-     <h3 class="open-sans-light"> TOILETS </h3>
+    <div class="col-4">toilets"> TOILETS </h3>
 
       {% for item in page.toilets %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -440,7 +448,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> TUBS </h3>
+     <h3 class="open-sans-light" id="tubs"> TUBS </h3>
 
       {% for item in page.tubs %}
           <a href="{{ item.url }}" target="_blank" class="tag">
@@ -450,7 +458,7 @@ vanitiesandsinks:
     </div>
 
     <div class="col-4">
-     <h3 class="open-sans-light"> VANITIES & SINKS </h3>
+     <h3 class="open-sans-light" id="vanitiesandsinks"> VANITIES & SINKS </h3>
 
       {% for item in page.vanitiesandsinks %}
           <a href="{{ item.url }}" target="_blank" class="tag">

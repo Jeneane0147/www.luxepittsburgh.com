@@ -4,29 +4,50 @@ projects:
   - title: otto milk
     column-width: col-8_sm-12
     featured_image: /img/ottomilkmain.jpeg
+    images:
+      - /img/ottomilkmain.jpeg
+      - /img/ottomilkmain.jpeg
+      - /img/ottomilkmain.jpeg
+      - /img/ottomilkmain.jpeg
+      - /img/ottomilkmain.jpeg
+
   - title: project 2
     column-width: col-4_sm-12
-    featured_image: /img/ottomilkmain.jpeg
+    featured_image: /img/product-categories-lighting.jpg
+    images:
+      - /img/downtownshowroom.jpg
+      - /img/eastlibertyshowroom.jpeg
+
   - title: smallman
     column-width: col-6_sm-12
     featured_image: /img/ottomilkmain.jpeg
-  - title: smallman
+
+  - title: smallman 2
     column-width: col-6_sm-12
     featured_image: /img/ottomilkmain.jpeg
 ---
-   <section class="grid">
-     <div class="col-12">
-       <h1> Projects </h1>
-       <h3> Our Team + Your Vision </h3>
-     </div>
-   </section>
+<section class="grid">
+ <div class="col-12">
+   <h1> Projects </h1>
+   <h3> Our Team + Your Vision </h3>
+ </div>
+</section>
 
 <!-- ADD IMAGES AND LINKS -->
-  <section class="grid">
-    {% for project in page.projects %}
-       <div class="{{project.column-width}} project-item">
-         <h2> {{project.title}} </h2>
-         <div class="bg-image" style="background-image: url({{project.featured_image}})"></div>
-       </div>
-    {% endfor %}
- </section>
+<section class="grid">
+  {% for project in page.projects %}
+    <div class="{{project.column-width}} project-item">
+      <h2> <a href="{{ project.featured_image }}" class="{{ project.title | slugify }} text-no-underline"> {{ project.title }} </a> </h2>
+      <a href="{{ project.featured_image }}" class="{{ project.title | slugify }}">
+        <div class="bg-image" style="background-image: url({{ project.featured_image }})"></div>
+      </a>
+      <div class="project-images">
+        {% for src in project.images %}
+          <a href="{{ src }}" class="{{ project.title | slugify }}">
+            <img src="{{ src }}" />
+          </a>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>

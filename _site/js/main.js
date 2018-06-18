@@ -4,7 +4,7 @@ $('document').ready(function(){
   // Add ScrollReveal
   window.sr = ScrollReveal();
   sr.reveal('.show-me');
-
+  
 });
 
 // Wait for images to load
