@@ -338,6 +338,26 @@ body.menu-visible .mobile-navigation-close{
   display:block;
 }
 
+@media (max-width: 576px) {
+
+  .luxelocations .order-1 {
+    order: 1;
+  }
+
+  .luxelocations .order-2 {
+    order: 2;
+  }
+
+  .luxelocations .order-3 {
+    order: 3;
+  }
+
+  .luxelocations .order-4 {
+    order: 4;
+  }
+
+}
+
 /* HELPERS */
 .container {
   margin-left: auto !important;
