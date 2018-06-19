@@ -32,8 +32,8 @@ section {
 /* HEADER */
 header a {
   padding: 1rem 0;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin-left: 1%;
+  margin-right: 1%;
   display: inline-block;
   letter-spacing: 2px;
   text-decoration: none;
@@ -64,6 +64,13 @@ body.linecard-html .nav-linecard,
 body.locations-html .nav-locations {
   color: black;
   border-bottom: 1px solid;
+}
+
+@media (max-width: 1080px) {
+
+  header a {
+    letter-spacing: 1px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -319,6 +326,8 @@ body.menu-visible .mobile-navigation-close{
   max-width: 35px;
 }
 
+/* CLIENT STORIES */
+
 .clientstoies {
   font-size: 1.3rem;
   line-height: 1.8em;
@@ -331,6 +340,15 @@ body.menu-visible .mobile-navigation-close{
 
 .clientstories video {
   object-fit: cover;
+}
+
+
+/* SERVICES */
+
+.bg-cover-services {
+  background-image: url("../img/servicesmain.jpg");
+  background-size: cover;
+  min-height: 64vh;
 }
 
 .locationimages {
@@ -395,6 +413,14 @@ body.menu-visible .mobile-navigation-close{
 
 .padded_sides_10 {
   padding: 10%;
+}
+
+.padded_left_6 {
+  padding-left: 6%;
+}
+
+.padded_left_4 {
+  padding-left: 4%;
 }
 
 .text-white {
